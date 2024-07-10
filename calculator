@@ -1,0 +1,41 @@
+def add():
+    c=a+b 
+    print("Add is ",c)
+def sub():
+    c=a-b
+    print("sub is ",c)
+def mult():
+    c=a*b
+    print("Mult is ",c)
+def div():
+    c=a/b
+    print("div is ",c)
+
+if __name__==  "__main__":
+    print("************** Calcalution  *****************")
+    while True:
+        print("\n")
+        a= int (input( "Enter a first  number :"))
+        b= int (input( "Enter a second  number :"))
+        print("PLease select one of the following option.")
+        print("****************************************")
+        print("Calculator Menu :")
+        print("1.(+)ADDITION ")
+        print("2.(-)SUBSTRACTION ")
+        print("3. (*)MULTIPLICATION ")
+        print("4.(/) DIVISION ")
+        print("5. EXIT")
+        choice= input("Enter your choice :")
+    
+        if (choice=="1"):
+            add()
+        elif (choice=="2"):
+            sub()
+        elif (choice=="3"):
+             mult()
+        elif (choice =="4"):
+             div()
+        elif (choice=="5"):
+            break
+        else:
+            print("Invalide Choice ")
